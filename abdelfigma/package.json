@@ -1,5 +1,5 @@
 {
-  "name": "my-nuxt-app",
+  "name": "abdelfigma",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,12 +12,9 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^1.0.1",
-    "@tailwindcss/vite": "^4.3.3",
     "daisyui": "^5.6.18",
-    "nuxt": "^4.4.8",
-    "pinia": "^4.0.2",
-    "tailwindcss": "^4.3.3",
-    "vue": "^3.5.39",
-    "vue-router": "^5.1.0"
+    "nuxt": "^4.5.0",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0"
   }
 }
