@@ -1,0 +1,62 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables
+.env
+.env.*
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Static files (if collected)
+staticfiles/
+
+# Migrations (optional - keep if working in a team)
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Linting
+.ruff_cache/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm
+*.iml
