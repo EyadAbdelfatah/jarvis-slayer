@@ -5,7 +5,7 @@ class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=100)
     cover = models.ImageField(upload_to='profile_pics/')
-    avg_star_rating = models.IntegerField(min=1, max=5, null=True)
+    description = models.CharField(max_length=200)
     genres = models.JSONField()
     archived = models.BooleanField(default=False)
 
