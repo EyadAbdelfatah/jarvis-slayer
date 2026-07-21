@@ -60,3 +60,5 @@ Thumbs.db
 
 # PyCharm
 *.iml
+
+**/node_modules/
