@@ -15,6 +15,14 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# The URL used to access the media files via a browser
+MEDIA_URL = '/media/'
+
+# The absolute filesystem path to the directory where files are stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
