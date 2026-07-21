@@ -4,5 +4,12 @@
   </div>
 </template>
 <script setup lang="ts">
-//bookid, image, book summary, rating, author
+const vModel = defineModel<string>();
+const props = defineProps<{
+  bookid: string;
+  author: string;
+  image: string;
+  summary: string;
+  rating: number;
+}>();
 </script>
