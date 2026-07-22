@@ -22,7 +22,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from user.views import RegisterView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -39,11 +39,7 @@ urlpatterns = [
         "auth/refresh/",
         TokenRefreshView.as_view(),
         name="refresh"
-    ),
-    path(
-        "auth/register/",
-        RegisterView.as_view()
-    ),
+    )
 ]
 
 if settings.DEBUG:

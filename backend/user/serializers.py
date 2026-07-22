@@ -16,22 +16,3 @@ class UserSerializer(serializers.ModelSerializer):
   def get_full_name(self, obj):
     return f"{obj.first_name} {obj.last_name}"
   
-class RegisterSerializer(serializers.ModelSerializer):
-  password = serializers.CharField(
-    write_only=True
-  )
-
-  class Meta:
-    model = CustomUser
-    fields = [
-      "email",
-      "password",
-      "first_name",
-      "last_name",
-    ]
-
-  def create(self, validated_data):
-    validated_data["role"] = 0
-    return CustomUser.objects.create_user(
-        **validated_data
-    )
