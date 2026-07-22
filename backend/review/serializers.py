@@ -11,7 +11,7 @@ class ReviewSerializer(serializers.ModelSerializer):
   class Meta:
     model = Review
     fields = ["id", "user", "book", "star_rating", "likes", "written_text", "spoiler", "approved", "created_at", "updated_at"]
-    read_only_fields = ["id", "user", "book", "created_at", "updated_at"]
+    read_only_fields = ["id", "user", "book", "liked_by", "created_at", "updated_at"]
 
   def get_likes(self, obj):
     return obj.liked_by.count()
@@ -22,3 +22,4 @@ class ReviewSerializer(serializers.ModelSerializer):
         **validated_data
     )
     return review
+  
